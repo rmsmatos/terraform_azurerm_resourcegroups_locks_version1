@@ -1,23 +1,23 @@
 output "id" {
-  value       = module.azurerm_resourcegroup_type1.id
+  value       = module.azurerm_resourcegroup_version1.id
   description = "Returns Resource Group ID."
 }
 output "location" {
-  value       = module.azurerm_resourcegroup_type1.location
+  value       = module.azurerm_resourcegroup_version1.location
   description = "Returns Resource Group Location."
 }
 output "name" {
-  value       = module.azurerm_resourcegroup_type1.name
+  value       = module.azurerm_resourcegroup_version1.name
   description = "Returns Resource Group Name."
 }
 output "tags" {
-  value       = module.azurerm_resourcegroup_type1.tags
+  value       = module.azurerm_resourcegroup_version1.tags
   description = "Returns Resource Group Tags."
 }
-#output "managed_by" {
-#  value       = module.azurerm_resourcegroup_type1.managed_by
-#  description = "Returns the ID of the resource or application that manages this Resource Group."
-#}
+output "managed_by" {
+  value       = module.azurerm_resourcegroup_version1.managed_by
+  description = "Returns the ID of the resource or application that manages this Resource Group."
+}
 
 output "lock_id" {
   value       = resource.azurerm_management_lock.lock.id
