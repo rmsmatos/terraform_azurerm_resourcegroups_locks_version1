@@ -60,7 +60,7 @@ Creates an Azure resource group given a name, location and tags (optional). If w
 ### Example
 ```hcl
 terraform {
-  required_version = ">= 1.5.3"
+  required_version = ">= 1.5"
 }
 
 module "terraform_azurerm_resourcegroups_lock_version1" {
